@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,6 @@ Route::get('/', function () {
 
 Route::view('/register', 'register')->name('register');
 Route::view('/registration-success', 'registration-success')->name('register.success');
+
+
+Route::get('/countries', '\App\Http\Controllers\MainController@index')->name('country.index');
